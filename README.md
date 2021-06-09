@@ -1,4 +1,6 @@
 ```
+$ git clone https://github.com/NTMan/podman-example.git
+$ cd podman-example
 $ podman build --tag bugreport:1.0 .
 STEP 1: FROM fedora:33
 STEP 2: COPY config/inside.ini /root/inside.ini
@@ -10,7 +12,5 @@ STEP 4: COMMIT bugreport:1.0
 --> 41c47443237
 41c47443237ccc02d7e56f67b43e00b4ff200132ed3d7bfc613b6a7d5dc75106
 
-$ podman run  -v "/home/mikhail/stend/bugreport/inside.ini":"/root/inside.ini":Z localhost/bugreport:1.0
+$ podman run  -v "$PWD/inside.ini":"/root/inside.ini":Z localhost/bugreport:1.0
 ```
-
-Where  `/home/mikhail/stend/bugreport` is the path when located this repo.
