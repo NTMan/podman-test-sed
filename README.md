@@ -1,6 +1,8 @@
 ```
 $ git clone https://github.com/NTMan/podman-example.git
+
 $ cd podman-example
+
 $ podman build --tag bugreport:1.0 .
 STEP 1: FROM fedora:33
 STEP 2: COPY config/inside.ini /root/inside.ini
