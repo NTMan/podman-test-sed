@@ -1,4 +1,4 @@
-FROM fedora:33
+FROM fedora:37
 
 COPY config/inside.ini /root/inside.ini
 
