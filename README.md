@@ -1,7 +1,7 @@
 ```
-$ git clone https://github.com/NTMan/podman-example.git
+$ git clone https://github.com/NTMan/podman-test-sed.git
 
-$ cd podman-example
+$ cd podman-test-sed
 
 $ podman build --tag bugreport:1.0 .
 
